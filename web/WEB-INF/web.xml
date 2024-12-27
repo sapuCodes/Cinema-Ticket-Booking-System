@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_1.xsd"
+	 version="6.1">
+    
+    <display-name>Home Page</display-name>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+<servlet>
+    <servlet-name>AddMovieServlet</servlet-name>
+    <servlet-class>cinema.user.admin.AddMovieServlet</servlet-class>
+    <multipart-config>
+        <max-file-size>10000000</max-file-size> <!-- Max file size of 10MB -->
+        <max-request-size>10000000</max-request-size> <!-- Max request size -->
+        <file-size-threshold>1024</file-size-threshold> <!-- Buffer file size before writing to disk -->
+    </multipart-config>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AddMovieServlet</servlet-name>
+    <url-pattern>/AddMovieServlet</url-pattern>
+</servlet-mapping>
+
+
+</web-app>

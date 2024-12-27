@@ -1,0 +1,249 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+
+/* About Us Section Styling */
+.about-us-section {
+    padding: 100px 20px;
+    background: linear-gradient(120deg, #08002c, #3592b3);
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.about-header {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: slideInLeft 1s ease-out forwards;
+}
+
+.section-subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 50px;
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    animation: fadeInUp 2s ease-out forwards;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.image-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.about-description {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 40px;
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #0c0137;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #056881;
+}
+
+/* About Us Section Image Styling */
+.about-image {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.about-image:hover {
+    transform: scale(1.05);
+}
+
+/* Team Section Styling */
+.team-section {
+    background-color: #00061f;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.team-section .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    animation: fadeInUp 2s ease-out forwards;
+}
+
+.team-member {
+    text-align: center;
+    flex-basis: 23%;
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.team-member:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.team-member:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.team-member:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+.team-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.team-image:hover {
+    transform: scale(1.1);
+}
+
+.team-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.team-role {
+    font-size: 1.1rem;
+    color: #7e6e6e;
+}
+
+/* Footer Section Styling */
+.footer-section {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content p {
+    font-size: 1rem;
+    color: #bbb;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content, .image-content {
+        max-width: 100%;
+    }
+
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        flex-basis: 80%;
+        margin-bottom: 30px;
+    }
+
+    .about-title, .about-description, .section-title {
+        font-size: 1.5rem;
+    }
+
+    .button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .team-name {
+        font-size: 1.1rem;
+    }
+}
