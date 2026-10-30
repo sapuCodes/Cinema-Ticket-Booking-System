@@ -16,10 +16,6 @@ A Java-based web application for browsing movies, selecting cinema seats, and co
 ![PayPal](https://img.shields.io/badge/PayPal-Payment%20API-003087?style=for-the-badge&logo=paypal&logoColor=white)
 ![Apache Ant](https://img.shields.io/badge/Build-Apache%20Ant-A81C7D?style=for-the-badge&logo=apacheant&logoColor=white)
 
-<br>
-
-[**📂 View Repository**](https://github.com/sapuCodes/Cinema-Ticket-Booking-System)
-
 </div>
 
 ---
